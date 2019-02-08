@@ -1,0 +1,6 @@
+usr/local/bin/cryptomiles-qt usr/bin
+share/pixmaps/cryptomiles32.xpm usr/share/pixmaps
+share/pixmaps/cryptomiles16.xpm usr/share/pixmaps
+share/pixmaps/cryptomiles128.png usr/share/pixmaps
+debian/cryptomiles-qt.desktop usr/share/applications
+debian/cryptomiles-qt.protocol usr/share/kde4/services/

@@ -1,0 +1,22 @@
+[Unit]
+Description=Cryptomiles's distributed currency daemon
+After=network.target
+
+[Service]
+User=cryptomiles
+Group=cryptomiles
+
+Type=forking
+PIDFile=/var/lib/cryptomilesd/cryptomilesd.pid
+ExecStart=/usr/bin/cryptomilesd -daemon -pid=/var/lib/cryptomilesd/cryptomilesd.pid \
+-conf=/etc/cryptomiles/cryptomiles.conf -datadir=/var/lib/cryptomilesd -disablewallet
+
+Restart=always
+PrivateTmp=true
+TimeoutStopSec=60s
+TimeoutStartSec=2s
+StartLimitInterval=120s
+StartLimitBurst=5
+
+[Install]
+WantedBy=multi-user.target

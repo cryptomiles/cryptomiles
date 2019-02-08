@@ -1,0 +1,8 @@
+/usr/bin/cryptomiles-cli		--	gen_context(system_u:object_r:cryptomiles_exec_t,s0)
+/usr/sbin/cryptomilesd		--	gen_context(system_u:object_r:cryptomiles_exec_t,s0)
+/usr/lib(64)?/cryptomiles/cryptomilesd		--	gen_context(system_u:object_r:cryptomiles_exec_t,s0)
+
+/etc/cryptomiles(/.*)?		gen_context(system_u:object_r:cryptomiles_conf_t,s0)
+/var/lib/cryptomiles(/.*)?		gen_context(system_u:object_r:cryptomiles_var_lib_t,s0)
+
+(/var)?/run/cryptomilesd(/.*)?   gen_context(system_u:object_r:cryptomiles_var_run_t,s0)

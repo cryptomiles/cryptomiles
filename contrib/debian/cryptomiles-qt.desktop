@@ -1,0 +1,13 @@
+[Desktop Entry]
+Encoding=UTF-8
+Name=Cryptomiles Core
+Comment=Connect to the Cryptomiles P2P Network
+Comment[de]=Verbinde mit dem Cryptomiles peer-to-peer Netzwerk
+Comment[fr]=Cryptomiles, monnaie virtuelle cryptographique pair à pair
+Comment[tr]=Cryptomiles, eşten eşe kriptografik sanal para birimi
+Exec=cryptomiles-qt %u
+Terminal=false
+Type=Application
+Icon=cryptomiles128
+MimeType=x-scheme-handler/cryptomiles;
+Categories=Office;Finance;
